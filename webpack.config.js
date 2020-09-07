@@ -5,11 +5,17 @@ module.exports = {
   output: {
     path: path.resolve("dist"),
     filename: "main.js",
+    // for react-router-dom
+    publicPath: "/",
   },
   // define babel loader
   module: {
     rules: [
       { test: /\.jsx?$/, loader: "babel-loader", exclude: /node_modules/ },
     ],
+  },
+  devServer: {
+    // for react-router-dom
+    historyApiFallback: true,
   },
 };
