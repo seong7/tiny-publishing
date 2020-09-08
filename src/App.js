@@ -3,7 +3,7 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 
-// import './common.scss';
+import './common.scss';
 import './reset.scss';
 
 export default function App() {

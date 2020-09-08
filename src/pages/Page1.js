@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react';
+import Page1Layout from '../components/page1';
 
 export default function Page1() {
-  return <div>hello world 1</div>;
+  return <Page1Layout />;
 }

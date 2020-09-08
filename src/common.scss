@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "./values.scss";
+@import './values.scss';
 
 /* font color */
 .color-white {
@@ -150,7 +150,7 @@ button:focus {
 .clearfix::after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 .d-block {
   display: block !important;
@@ -169,7 +169,7 @@ button:focus {
   display: -ms-inline-flexbox !important;
   display: lnline-flex !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   // sm
   .d-sm-block {
     display: block !important;
@@ -258,7 +258,7 @@ button:focus {
 .float-none {
   float: none !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   // sm
   .float-sm-left {
     float: left !important;
@@ -342,7 +342,7 @@ button:focus {
 .w100 {
   width: 100% !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   // sm
   .w-sm-auto {
     width: auto !important;
@@ -531,7 +531,7 @@ button:focus {
   }
 }
 @for $num from 0 through 200 {
-  @media (min-width: 576px) {
+  @media (min-width: 0px) {
     // sm
     .p-sm-#{$num} {
       padding: ($num) + px !important;
@@ -688,7 +688,7 @@ button:focus {
 .text-decoration-none {
   text-decoration: none !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   // sm
   .text-sm-center {
     display: block !important;
@@ -883,7 +883,7 @@ button:focus {
 .clearfix::after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 .d-block {
   display: block !important;
@@ -995,7 +995,7 @@ button:focus {
 .float-none {
   float: none !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   // sm
   .float-sm-left {
     float: left !important;
@@ -1079,7 +1079,7 @@ button:focus {
 .w100 {
   width: 100% !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   // sm
   .w-sm-auto {
     width: auto !important;
@@ -1268,7 +1268,7 @@ button:focus {
   }
 }
 @for $num from 0 through 200 {
-  @media (min-width: 576px) {
+  @media (min-width: 0px) {
     // sm
     .p-sm-#{$num} {
       padding: ($num) + px !important;
@@ -1425,7 +1425,7 @@ button:focus {
 .text-decoration-none {
   text-decoration: none !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   // 모바일
   // sm
   .text-sm-center {

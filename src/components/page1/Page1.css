@@ -1,0 +1,75 @@
+* {
+  font-family: 'Avenir W01', sans-serif !important;
+}
+
+.page1_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(0deg, #ffffff00 0%, #00000073 100%);
+  color: rgba(255, 255, 255, 0.66);
+  z-index: 1;
+}
+
+.page1_header-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1100px;
+  line-height: 68px;
+  height: 68px;
+}
+
+.page1__logo-wrapper a {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.page1__logo-wrapper img {
+  height: 30px;
+}
+
+.page1__title {
+  background: #2276d2;
+  position: relative;
+}
+
+.page1__title-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://about.tiny.cloud/wp-content/uploads/2015/12/ephox-background.svg);
+  background-position: 50% 0px;
+}
+
+.page1__title-wrapper {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.page1__title-title {
+  font-family: 'AileronThin', sans-serif !important;
+  letter-spacing: 2px;
+  line-height: 54px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 44px;
+}
+@media (max-width: 768px) {
+  .page1__title-title {
+    font-size: 30px !important;
+  }
+}
+
+.page1__title-sub {
+  margin: 8px 0 0;
+  opacity: 0.7;
+}
