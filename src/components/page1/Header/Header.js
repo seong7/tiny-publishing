@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default function Header({ children, ...props }) {
   return (
     <div className="page1_header w100" {...props}>
-      <div className="page1_header-wrapper">{children}</div>
+      <div className="page1_header-wrapper center">{children}</div>
     </div>
   );
 }

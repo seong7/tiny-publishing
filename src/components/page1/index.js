@@ -6,6 +6,7 @@ export default function Page1Layout() {
     <Page1>
       <Page1.Header />
       <Page1.Title />
+      <Page1.Footer />
     </Page1>
   );
 }
