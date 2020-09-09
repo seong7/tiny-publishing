@@ -1,9 +1,51 @@
 * {
   font-family: 'Avenir W01', sans-serif !important;
 }
+.ant-row {
+  justify-content: center;
+  align-items: baseline;
+}
+.ant-col {
+  justify-content: center;
+  padding: 10px 10px;
+}
+.flex-column {
+  flex-direction: column;
+  align-items: center;
+}
+.flex-row {
+  flex-direction: row;
+  align-items: center;
+}
+.align-left {
+  align-items: start;
+}
+.mg-5per {
+  margin-left: 5%;
+}
 .center {
-  max-width: 1100px;
   margin: 0 auto;
+}
+.max-width-1100 {
+  max-width: 1100px;
+}
+.page1__section {
+  padding: 70px 0;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .center {
+    max-width: 751px;
+  }
+}
+@media (max-width: 768px) {
+  .center {
+    max-width: 90%;
+  }
+  .page1__section {
+    padding: 20px 0;
+  }
 }
 
 /**********/
@@ -53,7 +95,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(https://about.tiny.cloud/wp-content/uploads/2015/12/ephox-background.svg);
+  background-image: url('/public/svg/ephox-background.svg');
   background-position: 50% 0px;
 }
 
@@ -99,4 +141,231 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
+}
+
+/*******/
+/* Add */
+/*******/
+
+.page1__add {
+  padding: 20px 0;
+}
+
+.page1__add-wrapper {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid #2276d2;
+  line-height: 20px;
+}
+
+.page1__add a {
+  color: #2276d2 !important;
+  border-bottom: 1px solid #2276d2;
+}
+
+/************/
+/* Contents */
+/************/
+
+.page1__content-title {
+  text-align: center;
+}
+
+.page1__content-title h2 {
+  font-size: 38px;
+  font-weight: 200;
+  line-height: 1.4;
+  margin: 0 0 1.5rem;
+  font-family: 'AileronUltraLight', sans-serif !important;
+}
+
+@media (max-width: 767px) {
+  .page1__content-title h2 {
+    font-size: 25px;
+  }
+}
+
+.page1__content-title p {
+  line-height: 25px;
+  margin: 0 0 2.5rem;
+  font-weight: 400;
+}
+
+.icon_box {
+  display: inline-flex;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.icon_box-circle {
+  position: relative;
+  /* line-height: 2.5rem; */
+  height: 5.5rem;
+  width: 5.5rem;
+  min-width: 5.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12) inset, 0 1px 1px rgba(0, 0, 0, 0),
+    0 2px 3px rgba(0, 0, 0, 0) !important;
+  transition: box-shadow 0.3s;
+  background-color: transparent !important;
+  border: 1px #aeaeae solid !important;
+  color: #aeaeae !important;
+  text-align: start;
+}
+
+.content-icon {
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon_title {
+  font-size: 22px;
+  letter-spacing: 0px;
+  font-weight: 200;
+  line-height: 1.4;
+  margin: 1.2rem 0;
+  font-family: 'AileronUltraLight', sans-serif !important;
+}
+
+.icon_box.flex-row .icon_title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.icon_box.flex-row .icon_title-wrapper {
+  text-align: left;
+  margin-left: 5%;
+}
+
+.icon_subtitle {
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.content-button-wrapper {
+  display: flex;
+  margin-top: 10px;
+}
+.content-button {
+  margin: 0 auto;
+  font-size: large;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  line-height: 2.4;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 3px;
+
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  border: none;
+  z-index: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.content-button:hover {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.bg-green {
+  background-color: #8cc34a;
+}
+.bg-black {
+  background-color: #000;
+}
+
+.content__wide-bg {
+  position: relative;
+  background-color: rgba(237, 237, 237, 0.96);
+}
+
+.content__ibm-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/public/image/ibm-watson-cluster.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.05;
+  background-size: cover;
+}
+
+.icon-a {
+  padding: 15px 0 0;
+}
+.icon-a:hover {
+  color: #88b5e5 !important;
+}
+
+.content__websites-img {
+  max-width: 70% !important;
+  max-height: 70% !important;
+  filter: grayscale(1);
+}
+.content__websites-img:hover {
+  filter: none;
+}
+
+.content__review-icon {
+  font-size: 4rem;
+  line-height: 3.8rem;
+  opacity: 0.2;
+}
+@media (max-width: 600px) {
+  .content__review-icon {
+    display: none;
+  }
+}
+
+.content__review-img {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 1rem;
+  width: 60px !important;
+  border-radius: 50%;
+}
+
+.content__review p {
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.content__review-name {
+  line-height: 1.5rem;
+  color: #999999;
+}
+.content__review-name h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.content__tinynumbers {
+  font-weight: 100 !important;
+}
+
+.content__tinynumbers .ant-col {
+  margin: 0 0 25px;
+}
+
+.tinynumbers-subtitle {
+  line-height: 1.4;
+  padding: 10px 0;
+  margin: 0;
 }
