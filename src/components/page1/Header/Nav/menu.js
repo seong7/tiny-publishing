@@ -1,4 +1,4 @@
-const NavMenu = [
+const menu = [
   {
     title: 'Product',
     children: [
@@ -47,4 +47,4 @@ const NavMenu = [
   { title: 'Blog' },
 ];
 
-export default NavMenu;
+export default menu;

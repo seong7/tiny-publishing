@@ -6,7 +6,7 @@ import Overlay from './Nav/Overlay';
 import InlineMenu from './Nav/InlineMenu';
 import Button from '../../common/Button';
 import AntdIcon from '../../common/AntdIcon';
-import menuArray from './Nav/NavMenu';
+import menu from './Nav/menu';
 
 export default function Header({ children, ...props }) {
   return (
@@ -56,7 +56,7 @@ Header.Nav = function HeaderNav() {
         </Button>
         {isMenuVisible &&
           createPortal(
-            <InlineMenu navMenu={menuArray} />,
+            <InlineMenu navMenu={menu} />,
             document.querySelector('.page1_header-wrapper'),
           )}
       </div>
