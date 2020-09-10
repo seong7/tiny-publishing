@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from './Header';
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 import Contents from './Contents/Contents';
 import './Page1.css';
 
@@ -64,9 +64,7 @@ Page1.Add = function Page1Add() {
 
 Page1.Contents = Contents;
 
-Page1.Footer = function Page1Footer() {
-  return <Footer />;
-};
+Page1.Footer = Footer;
 
 Page1.propTypes = {
   children: PropTypes.node.isRequired,

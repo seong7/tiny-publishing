@@ -8,6 +8,7 @@ export default function Page1Layout() {
 
       <Page1.Title />
 
+      {/* Content  영역 */}
       <Page1.ContentWrapper className="pb-0">
         <Page1.Add />
       </Page1.ContentWrapper>
@@ -168,7 +169,20 @@ export default function Page1Layout() {
         />
       </Page1.ContentWrapper>
 
-      <Page1.Footer />
+      {/* Footer  영역 */}
+      <Page1.WideBackground className="footer-blue">
+        <Page1.ContentWrapper>
+          <Page1.Footer.Contact />
+        </Page1.ContentWrapper>
+      </Page1.WideBackground>
+
+      <Page1.WideBackground className="footer-gray">
+        <Page1.ContentWrapper>
+          <Page1.Footer.About />
+        </Page1.ContentWrapper>
+      </Page1.WideBackground>
+
+      <Page1.Footer.Copyright />
     </Page1>
   );
 }
