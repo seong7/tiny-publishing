@@ -1,5 +1,6 @@
 import React from 'react';
+import Page2Layout from '../components/page2';
 
 export default function Page2() {
-  return <div>hello world 2</div>;
+  return <Page2Layout />;
 }

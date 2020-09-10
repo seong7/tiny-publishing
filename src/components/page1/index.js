@@ -1,5 +1,6 @@
 import React from 'react';
 import Page1 from './Page1';
+import './Page1.css';
 
 export default function Page1Layout() {
   return (

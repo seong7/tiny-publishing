@@ -1,0 +1,45 @@
+.max-width-1100 {
+  max-width: 1100px;
+}
+
+/**********/
+/* Header */
+/**********/
+.page2__semiheader {
+  padding: 0.5rem 2rem 0.5rem;
+}
+.page2__semiheader-path a {
+  color: rgb(25, 118, 210) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.25s ease 0s;
+}
+.page2__semiheader-links a {
+  transition: color 0.1s;
+  margin: 0 1rem 0 0;
+  height: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  /* visibility: visible; */
+}
+.page2__semiheader-links a:hover {
+  color: #1976d2;
+}
+
+.page2_header {
+  padding: 0.5rem 2rem 0.5rem;
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.page2__logo-wrapper a {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  object-fit: fill;
+  height: 30px;
+}
+.page2__logo-wrapper img {
+  height: 100%;
+}

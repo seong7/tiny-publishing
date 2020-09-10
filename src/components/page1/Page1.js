@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 import Footer from './Footer/Footer';
 import Contents from './Contents/Contents';
-import './Page1.css';
 
 export default function Page1({ children, ...props }) {
   return <div {...props}>{children}</div>;
