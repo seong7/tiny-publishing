@@ -29,10 +29,14 @@ Page1.Title = function Page1Title() {
   );
 };
 
-Page1.Section = function Page1Section({ children, className, ...props }) {
+Page1.ContentWrapper = function Page1ContentWrapper({
+  children,
+  className,
+  ...props
+}) {
   return (
     <section
-      className={`page1__section center max-width-1100 ${className}`}
+      className={`page1__content-wrapper center max-width-1100 ${className}`}
       {...props}
     >
       {children}
@@ -67,10 +71,10 @@ Page1.Footer = function Page1Footer() {
 Page1.propTypes = {
   children: PropTypes.node.isRequired,
 };
-Page1.Section.defaultProps = {
+Page1.ContentWrapper.defaultProps = {
   className: '',
 };
-Page1.Section.propTypes = {
+Page1.ContentWrapper.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 };

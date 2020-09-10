@@ -8,11 +8,11 @@ export default function Page1Layout() {
 
       <Page1.Title />
 
-      <Page1.Section className="pb-0">
+      <Page1.ContentWrapper className="pb-0">
         <Page1.Add />
-      </Page1.Section>
+      </Page1.ContentWrapper>
 
-      <Page1.Section>
+      <Page1.ContentWrapper>
         <Page1.Contents.TextEditor
           title="Powering More Than 40% of the World’s Websites"
           subtitle="Rich text editor platforms that enable nontechnical users to create great content for your website or application."
@@ -34,11 +34,11 @@ export default function Page1Layout() {
             },
           ]}
         />
-      </Page1.Section>
+      </Page1.ContentWrapper>
 
       <Page1.WideBackground>
         <div className="content__ibm-img" />
-        <Page1.Section>
+        <Page1.ContentWrapper>
           <Page1.Contents.IBM
             title="Content Creation Solutions for IBM Software"
             subtitle="Boost the adoption of IBM’s social software and digital experience suites."
@@ -56,10 +56,10 @@ export default function Page1Layout() {
               },
             ]}
           />
-        </Page1.Section>
+        </Page1.ContentWrapper>
       </Page1.WideBackground>
 
-      <Page1.Section>
+      <Page1.ContentWrapper>
         <Page1.Contents.FileAndImage
           title="Manage Files and Images"
           subtitle="Developer libraries for uploading and managing images and other files make content management easy."
@@ -78,10 +78,10 @@ export default function Page1Layout() {
             },
           ]}
         />
-      </Page1.Section>
+      </Page1.ContentWrapper>
 
       <Page1.WideBackground>
-        <Page1.Section>
+        <Page1.ContentWrapper>
           <Page1.Contents.Websites
             title="Join the World’s Leading Developers"
             subtitle="Over 40% of the world’s websites are created with Tiny editing technology."
@@ -100,10 +100,10 @@ export default function Page1Layout() {
               { imgSrc: '/public/image/OpenText.png' },
             ]}
           />
-        </Page1.Section>
+        </Page1.ContentWrapper>
       </Page1.WideBackground>
 
-      <Page1.Section>
+      <Page1.ContentWrapper>
         <Page1.Contents.Reviews
           reviews={[
             {
@@ -122,10 +122,10 @@ export default function Page1Layout() {
             },
           ]}
         />
-      </Page1.Section>
+      </Page1.ContentWrapper>
 
       <Page1.WideBackground>
-        <Page1.Section>
+        <Page1.ContentWrapper>
           <Page1.Contents.TinyNumbers
             data={[
               {
@@ -146,10 +146,10 @@ export default function Page1Layout() {
               },
             ]}
           />
-        </Page1.Section>
+        </Page1.ContentWrapper>
       </Page1.WideBackground>
 
-      <Page1.Section>
+      <Page1.ContentWrapper>
         <Page1.Contents.AdditionalLinks
           icons={[
             {
@@ -166,7 +166,7 @@ export default function Page1Layout() {
             },
           ]}
         />
-      </Page1.Section>
+      </Page1.ContentWrapper>
 
       <Page1.Footer />
     </Page1>
