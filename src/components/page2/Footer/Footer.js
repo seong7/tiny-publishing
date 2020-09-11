@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'antd';
+import Button from '../../common/Button';
 import AntdIcon from '../../common/AntdIcon';
 import footerMenu from './footerMenu';
 
