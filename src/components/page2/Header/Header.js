@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
-// import { Dropdown } from 'antd';
 import Overlay from './Nav/Overlay';
+import LiWithOverlay from './Nav/LiWithOverlay';
+import Modal from './Nav/Modal';
 import Button from '../../common/Button';
 import AntdIcon from '../../common/AntdIcon';
 
 export default function Header({ children, ...props }) {
   return (
     <div className="page2_header w100" {...props}>
-      <div className="page2_header-wrapper max-width-1100">{children}</div>
+      <div className="page2_header-wrapper h100">{children}</div>
     </div>
   );
 }
@@ -28,45 +29,60 @@ Header.Logo = function HeaderLogo() {
   );
 };
 
-Header.Nav = function HeaderNav() {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const handleClick = () => setIsMenuVisible((prev) => !prev);
-
-  const Li = ({ name, overlay }) => (
-    <>
-      <li>
-        {/* <Dropdown overlay={overlay}> */}
-        <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
-          {name} <AntdIcon name="DownOutlined" />
-        </a>
-        {/* </Dropdown> */}
-      </li>
-      {createPortal(overlay, document.querySelector('.page2_header-wrapper'))}
-      {/* document.querySelector('.page2_header-wrapper')) */}
-    </>
+Header.Buttons = function HeaderButtons({ className }) {
+  return (
+    <div className={`page2__header-buttons ${className}`}>
+      <a className="h100 header-talk-btn" href="">
+        <AntdIcon name="CommentOutlined" />
+        Talk to an expert
+      </a>
+      <Button className="page2__header-button">Get TinyMCE For Free</Button>
+    </div>
   );
-  Li.propTypes = {
-    name: PropTypes.string.isRequired,
-    overlay: PropTypes.node.isRequired,
+};
+
+Header.Nav = function HeaderNav() {
+  const [isProductVisible, setIsProductVisible] = useState(false);
+  const [isPluginsVisible, setIsPluginsVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const handleClick = (setVisible, setRestNotVisible) => {
+    setVisible((prev) => !prev);
+    if (setRestNotVisible) setRestNotVisible(false);
   };
 
-  return (
-    <div>
-      {/* <div className="page1__nav-hamburger page1__header-el">
-          <Button className="page1__nav-icon" onClick={handleClick}>
-            <AntdIcon name="MenuOutlined" />
-          </Button>
-          {isMenuVisible &&
-            createPortal(
-              <InlineMenu navMenu={menu} />,
-              document.querySelector('.page1_header-wrapper'),
-            )}
-        </div> */}
+  const handleModalClick = () => handleClick(setIsModalVisible);
 
-      <nav className="page1__header-nav page1__header-el">
-        <ul className="page1__nav-list">
-          <Li name="Product" overlay={Overlay.Product} />
-          <Li name="Plugins" overlay={Overlay.Plugins} />
+  return (
+    <div className="page2__nav-wrapper">
+      <div className="page2__nav-hamburger page2__header-el">
+        <Button className="page2__nav-icon" onClick={handleModalClick}>
+          <AntdIcon name="MenuOutlined" />
+        </Button>
+        {isModalVisible &&
+          createPortal(
+            <Modal Buttons={Header.Buttons} handleClick={handleModalClick} />,
+            document.body,
+          )}
+      </div>
+
+      <nav className="page2__header-nav page2__header-el">
+        <ul className="page2__nav-list">
+          <LiWithOverlay
+            name="Product"
+            overlay={Overlay.Product()}
+            onClick={() =>
+              handleClick(setIsProductVisible, setIsPluginsVisible)
+            }
+            isOverlayVisible={isProductVisible}
+          />
+          <LiWithOverlay
+            name="Plugins"
+            overlay={Overlay.Plugins()}
+            onClick={() =>
+              handleClick(setIsPluginsVisible, setIsProductVisible)
+            }
+            isOverlayVisible={isPluginsVisible}
+          />
           <li>
             <a href="">Case Studies</a>
           </li>
@@ -84,4 +100,10 @@ Header.Nav = function HeaderNav() {
 
 Header.propTypes = {
   children: PropTypes.node.isRequired,
+};
+Header.Buttons.defaultProps = {
+  className: '',
+};
+Header.Buttons.propTypes = {
+  className: PropTypes.string,
 };

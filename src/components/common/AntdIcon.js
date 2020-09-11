@@ -17,6 +17,12 @@ import {
   GithubOutlined,
   DownOutlined,
   MenuOutlined,
+  CommentOutlined,
+  CloseOutlined,
+  FormatPainterOutlined,
+  AntDesignOutlined,
+  ExportOutlined,
+  PlaySquareOutlined,
 } from '@ant-design/icons';
 
 export default function AntdIcon({ name, className, style }) {
@@ -53,6 +59,18 @@ export default function AntdIcon({ name, className, style }) {
       return <DownOutlined className={className} style={style} />;
     case 'MenuOutlined':
       return <MenuOutlined className={className} style={style} />;
+    case 'CommentOutlined':
+      return <CommentOutlined className={className} style={style} />;
+    case 'CloseOutlined':
+      return <CloseOutlined className={className} style={style} />;
+    case 'FormatPainterOutlined':
+      return <FormatPainterOutlined className={className} style={style} />;
+    case 'AntDesignOutlined':
+      return <AntDesignOutlined className={className} style={style} />;
+    case 'ExportOutlined':
+      return <ExportOutlined className={className} style={style} />;
+    case 'PlaySquareOutlined':
+      return <PlaySquareOutlined className={className} style={style} />;
 
     default:
       return <></>;
