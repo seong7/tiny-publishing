@@ -43,7 +43,7 @@ Contents.Included = function ContentsIncluded() {
   return (
     <div>
       <Contents.Title title="What's Included:" />
-      <Contents.Section>Test</Contents.Section>
+      <Contents.Section>What's Included:</Contents.Section>
     </div>
   );
 };
