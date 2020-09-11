@@ -17,6 +17,7 @@ Contents.Title = function ContetnsTitle({ title, renderButton }) {
     </div>
   );
 };
+
 Contents.Section = function ContentsSection({ children, className }) {
   return (
     <section
@@ -53,7 +54,26 @@ Contents.GetStarted = function ContentsGetStarted() {
       <div className="page2__contents-blue">
         <Contents.Title title="Get Started" />
       </div>
-      <Contents.Section>Test</Contents.Section>
+      <Contents.Section>
+        <div className="getStarted-wrapper">
+          <div className="getStarted-card page2__bg-blue">
+            <h6>Community</h6>
+            <Button className="page2__button">Get Started</Button>
+          </div>
+          <div className="getStarted-card page2__bg-blue">
+            <h6>Cloud Essential</h6>
+            <Button className="page2__button">Start Your Trial</Button>
+          </div>
+          <div className="getStarted-card page2__bg-blue">
+            <h6>Cloud Professional</h6>
+            <Button className="page2__button">Start Your Trial</Button>
+          </div>
+          <div className="getStarted-card page2__bg-blue getStarted-img-card">
+            <h6>Custom</h6>
+            <Button className="page2__button">Contact Sales</Button>
+          </div>
+        </div>
+      </Contents.Section>
     </div>
   );
 };

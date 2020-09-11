@@ -591,6 +591,7 @@
 }
 .page2__contents-section {
   padding: 4rem 2rem;
+  padding-top: 2rem;
 }
 .page2__contents-blue {
   background: #fafcff;
@@ -1006,6 +1007,58 @@
   list-style-type: none;
 }
 
+/*************************/
+/* Contents - GetStarted */
+/*************************/
+.getStarted-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.getStarted-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24%;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+  background-color: #fafcff;
+  min-width: 12.66rem;
+}
+.getStarted-card h6 {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1.43;
+  font-size: 1.25rem;
+  margin: 0 auto 0.5rem;
+  color: #283c6f;
+}
+.getStarted-card button {
+  margin: 0;
+  padding: 0.3rem 0.5rem;
+}
+.getStarted-img-card {
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #061437;
+  background-position: 0;
+  background-size: cover;
+  background-image: url(/public/image/price-aside-bg.png),
+    linear-gradient(0deg, #0f2251 0%, #061437 100%);
+}
+.getStarted-img-card h6 {
+  color: white !important;
+}
+
 @media (max-width: 1020px) {
   .page2__pricing-wrapper {
     flex-direction: column;
@@ -1024,6 +1077,12 @@
     width: 100%;
     margin-top: 30px;
   }
+  .getStarted-card {
+    padding: 1.5rem 0;
+  }
+  .getStarted-card h6 {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px) {
   .page2__contents-titleWrapper {
@@ -1038,6 +1097,13 @@
   }
   .company-plus p {
     width: 100%;
+  }
+  .getStarted-wrapper {
+    flex-direction: column;
+  }
+  .getStarted-card {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 .check-svg {
