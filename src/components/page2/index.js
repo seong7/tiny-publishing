@@ -6,6 +6,8 @@ export default function Page2Layout() {
   return (
     <Page2>
       <Page2.Header />
+
+      <Page2.Footer />
     </Page2>
   );
 }

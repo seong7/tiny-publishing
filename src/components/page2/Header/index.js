@@ -5,7 +5,7 @@ import Header from './Header';
 
 export default function Page2Layout() {
   return (
-    <div className="header-fixed">
+    <header className="header-sticky">
       <SemiHeader />
 
       <Header>
@@ -43,6 +43,6 @@ export default function Page2Layout() {
           </Col>
         </Row>
       </Header>
-    </div>
+    </header>
   );
 }
