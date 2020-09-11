@@ -578,6 +578,13 @@
 /************/
 /* Contents */
 /************/
+
+.page2__contents-section .flex-column {
+  display: flex;
+}
+.page2__contents-section .flex-row {
+  display: flex;
+}
 .page2__bg-blue {
   background-color: #fafcff;
   border: 1px solid #edf3ff;
@@ -593,12 +600,6 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2.5rem;
-}
-@media (max-width: 767px) {
-  .page2__contents-titleWrapper {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .page2__contents-titleWrapper h2 {
   color: #415484;
@@ -653,4 +654,392 @@
 }
 .page2__qnaList p a:hover {
   text-decoration: underline;
+}
+
+/**********************/
+/* Contents - Pricing */
+/**********************/
+
+.page2__pricing-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__card {
+  padding: 2rem;
+  background: #fafcff;
+}
+.price__card h6 {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.71;
+  color: #283c6f;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  line-height: 1;
+}
+.price__card-price {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+.price__card-price .dollar {
+  position: relative;
+  bottom: 0.6rem;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: #283c6f;
+  font-weight: 700;
+}
+
+.price__card-price h2 {
+  display: inline-block;
+  position: relative;
+  font-family: avenir, helvetica, arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.5rem;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #283c6f;
+}
+
+.price__card-price span {
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.71;
+  color: #283c6f;
+  line-height: 1;
+}
+
+.price__card i {
+  font-style: italic;
+  color: #415484;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.71;
+  color: #283c6f;
+  margin: 0 0 1rem;
+  line-height: 1;
+  font-size: 0.75rem;
+  font-style: oblique;
+}
+
+.price__switch-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1.5rem;
+}
+.price__switch-wrapper span {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #283c6f;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+.price__switch {
+  margin: 0 0.5rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.price__extra {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.67;
+  color: #283c6f;
+  margin: 0 0 1.5rem;
+  line-height: 1;
+}
+
+.price__option-list {
+  margin: 0 0 4rem;
+  padding: 0;
+}
+.price__option-list li {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0 0 0.25rem;
+  color: #283c6f;
+}
+
+.price__button {
+  margin: 0 0 1.5rem;
+}
+
+.price__card p {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.71;
+  color: #283c6f;
+}
+.price-card-flex-wrapper {
+  width: 50%;
+}
+.price__card-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.price__community-wrapper {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.price__community-wrapper h6 {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.71;
+  color: #283c6f;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  line-height: 1;
+}
+.price__community-wrapper h3 {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.38;
+  color: #283c6f;
+}
+.price__community-wrapper p {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 335px;
+  color: #283c6f;
+  margin: 1rem 0;
+}
+
+.price__community-buttons {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #283c6f;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  font-size: 16px;
+}
+.price__community-buttons svg {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.price__community-buttons button {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.price__company-wrapper {
+  width: 50%;
+}
+
+.price__company {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  height: 100%;
+  background: #061437;
+  background-position: 0;
+  background-size: cover;
+  background-image: url(/public/image/price-aside-bg.png),
+    linear-gradient(0deg, #0f2251 0%, #061437 100%);
+  text-align: center;
+}
+.company-header {
+  color: #415484;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.71;
+  color: #283c6f;
+  display: inline-block;
+  margin: 0 auto 1rem;
+  border: solid 1px #415484;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.875rem 1px;
+  vertical-align: middle;
+  color: white;
+}
+.company-header svg {
+  margin-right: 10px;
+}
+.price__company h3 {
+  color: white;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+.price__company p {
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.71;
+  color: #283c6f;
+  color: white;
+  margin: 0 0 2rem;
+}
+
+.company-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 4.5rem;
+}
+
+.company-img-wrapper img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  object-fit: contain;
+}
+
+.company-button {
+  width: 133px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.company-plus p {
+  margin: 0 auto 0.25rem;
+  width: 50%;
+}
+.company-plus {
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  margin: 0 auto 2rem;
+  padding: 0;
+  max-width: 415px;
+  list-style-type: none;
+}
+
+@media (max-width: 1020px) {
+  .page2__pricing-wrapper {
+    flex-direction: column;
+  }
+  .price-card-flex-wrapper,
+  .price-company-wrapper {
+    width: 100%;
+  }
+  .price__community-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .price__company-wrapper {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .page2__contents-titleWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page2__contents-section {
+    padding: 4rem 0;
+  }
+  .price__card-wrapper {
+    flex-direction: column;
+  }
+  .company-plus p {
+    width: 100%;
+  }
+}
+.check-svg {
+  color: #3ed0a6;
 }

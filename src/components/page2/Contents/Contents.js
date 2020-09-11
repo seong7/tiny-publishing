@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../../common/Button';
 import qnaData from './qna/data';
-import QnaList from './qna/qnaList';
+import QnaList from './qna/QnaList';
+import Pricing from './pricing';
 
 export default function Contents({ children, ...props }) {
   return <div {...props}>{children}</div>;
@@ -30,7 +31,9 @@ Contents.Pricing = function ContentsPricing() {
   return (
     <div>
       <Contents.Title title="Pricing Plans" />
-      <Contents.Section>Test</Contents.Section>
+      <Contents.Section>
+        <Pricing />
+      </Contents.Section>
     </div>
   );
 };
@@ -38,8 +41,17 @@ Contents.Pricing = function ContentsPricing() {
 Contents.Included = function ContentsIncluded() {
   return (
     <div>
+      <Contents.Title title="What's Included:" />
+      <Contents.Section>Test</Contents.Section>
+    </div>
+  );
+};
+
+Contents.GetStarted = function ContentsGetStarted() {
+  return (
+    <div>
       <div className="page2__contents-blue">
-        <Contents.Title title="What's Included:" />
+        <Contents.Title title="Get Started" />
       </div>
       <Contents.Section>Test</Contents.Section>
     </div>

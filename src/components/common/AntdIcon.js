@@ -23,6 +23,7 @@ import {
   AntDesignOutlined,
   ExportOutlined,
   PlaySquareOutlined,
+  CheckCircleFilled,
 } from '@ant-design/icons';
 
 export default function AntdIcon({ name, className, style }) {
@@ -71,6 +72,8 @@ export default function AntdIcon({ name, className, style }) {
       return <ExportOutlined className={className} style={style} />;
     case 'PlaySquareOutlined':
       return <PlaySquareOutlined className={className} style={style} />;
+    case 'CheckCircleFilled':
+      return <CheckCircleFilled className={className} style={style} />;
 
     default:
       return <></>;

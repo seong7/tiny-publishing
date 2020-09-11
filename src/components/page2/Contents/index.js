@@ -6,6 +6,7 @@ export default function ContentsLayout() {
     <Contents>
       <Contents.Pricing />
       <Contents.Included />
+      <Contents.GetStarted />
       <Contents.Qna />
     </Contents>
   );
