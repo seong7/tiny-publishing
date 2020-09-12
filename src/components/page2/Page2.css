@@ -486,7 +486,7 @@
 }
 
 .page2__semi-footer {
-  padding: 6rem;
+  padding: 6rem 2rem 4rem;
   background-color: #2a2a2a;
   background-image: linear-gradient(
       90deg,
@@ -498,11 +498,6 @@
   background-position: top right;
   background-repeat: no-repeat;
   color: #b9b9b9;
-}
-@media (min-width: 481px) {
-  .page2__semi-footer {
-    padding: 6rem 2rem 4rem;
-  }
 }
 
 .page2__semifooter-flex {
