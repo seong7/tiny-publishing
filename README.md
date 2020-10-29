@@ -1,6 +1,6 @@
 # Tiny
 
-반응형  웹페이지 퍼블리싱 프로젝트
+반응형 웹페이지 퍼블리싱 프로젝트
 
 <img src="https://user-images.githubusercontent.com/52827441/97517197-1ae86400-19d8-11eb-9b86-28ffaddf8ec0.png" width="400px"/>
 <img src="https://user-images.githubusercontent.com/52827441/97517265-3a7f8c80-19d8-11eb-8ad4-30d328a68e22.png" width="400px"/>
@@ -8,11 +8,11 @@
 ### 실행방법
 
 ```
-yarn install 
+yarn install
 
 yarn start
 
-* http://localhost:8080/ 접속
+* http://localhost:3000/ 접속
 
 * 화면에서 page 번호 클릭
 ```
