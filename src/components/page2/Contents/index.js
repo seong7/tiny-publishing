@@ -471,48 +471,28 @@ export default function ContentsLayout() {
                 <p>You&#39;re in good company</p>
                 <div className="company-img-wrapper">
                   <img
-                    src="/public/svg/salseloft-logo.svg"
+                    src="/svg/salseloft-logo.svg"
                     alt="company"
                     height={29}
                   />
-                  <img
-                    src="/public/svg/adobe-logo.svg"
-                    alt="company"
-                    height={31}
-                  />
+                  <img src="/svg/adobe-logo.svg" alt="company" height={31} />
+                </div>
+                <div className="company-img-wrapper">
+                  <img src="/svg/boeing-logo.svg" alt="company" height={31} />
+                  <img src="/svg/nasdaq-logo.svg" alt="company" height={32} />
                 </div>
                 <div className="company-img-wrapper">
                   <img
-                    src="/public/svg/boeing-logo.svg"
-                    alt="company"
-                    height={31}
-                  />
-                  <img
-                    src="/public/svg/nasdaq-logo.svg"
-                    alt="company"
-                    height={32}
-                  />
-                </div>
-                <div className="company-img-wrapper">
-                  <img
-                    src="/public/svg/microsoft-logo.svg"
+                    src="/svg/microsoft-logo.svg"
                     alt="company"
                     height={27}
                   />
-                  <img
-                    src="/public/svg/hcl-logo.svg"
-                    alt="company"
-                    height={15}
-                  />
+                  <img src="/svg/hcl-logo.svg" alt="company" height={15} />
                 </div>
                 <div className="company-img-wrapper">
+                  <img src="/svg/visa-logo.svg" alt="company" height={23} />
                   <img
-                    src="/public/svg/visa-logo.svg"
-                    alt="company"
-                    height={23}
-                  />
-                  <img
-                    src="/public/svg/atlassian-logo.svg"
+                    src="/svg/atlassian-logo.svg"
                     alt="company"
                     height={21}
                   />

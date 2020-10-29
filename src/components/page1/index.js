@@ -88,18 +88,18 @@ export default function Page1Layout() {
             title="Join the World’s Leading Developers"
             subtitle="Over 40% of the world’s websites are created with Tiny editing technology."
             websites={[
-              { imgSrc: '/public/image/Blackboard_logo.png' },
-              { imgSrc: '/public/image/Survey_Monkey_logo.png' },
-              { imgSrc: '/public/image/Constant_Contact_logo.png' },
-              { imgSrc: '/public/image/Eventbrite_logo.png' },
-              { imgSrc: '/public/image/Evernote_logo.png' },
-              { imgSrc: '/public/image/IBM_logo.png' },
-              { imgSrc: '/public/image/LinkedIn_Logo.svg' },
-              { imgSrc: '/public/image/Marketo_logo.png' },
-              { imgSrc: '/public/image/Microsoft_logo.png' },
-              { imgSrc: '/public/image/Wordpress_logo.png' },
-              { imgSrc: '/public/image/Zendesk_logo.png' },
-              { imgSrc: '/public/image/OpenText.png' },
+              { imgSrc: '/image/Blackboard_logo.png' },
+              { imgSrc: '/image/Survey_Monkey_logo.png' },
+              { imgSrc: '/image/Constant_Contact_logo.png' },
+              { imgSrc: '/image/Eventbrite_logo.png' },
+              { imgSrc: '/image/Evernote_logo.png' },
+              { imgSrc: '/image/IBM_logo.png' },
+              { imgSrc: '/image/LinkedIn_Logo.svg' },
+              { imgSrc: '/image/Marketo_logo.png' },
+              { imgSrc: '/image/Microsoft_logo.png' },
+              { imgSrc: '/image/Wordpress_logo.png' },
+              { imgSrc: '/image/Zendesk_logo.png' },
+              { imgSrc: '/image/OpenText.png' },
             ]}
           />
         </Page1.ContentWrapper>
@@ -109,14 +109,14 @@ export default function Page1Layout() {
         <Page1.Contents.Reviews
           reviews={[
             {
-              imgSrc: '/public/image/patrick.jpeg',
+              imgSrc: '/image/patrick.jpeg',
               review:
                 'TinyMCE is one of those “cornerstone” products on the web.',
               reviewer: 'Patrick Coombe',
               companyAndPosition: 'CEO, Elite Strategies LLC',
             },
             {
-              imgSrc: '/public/image/Alexander.jpeg',
+              imgSrc: '/image/Alexander.jpeg',
               review:
                 'This is one of the web’s unsung heroes. Regularly updated, easy to use and powerful.',
               reviewer: 'J. Alexander Curtis',

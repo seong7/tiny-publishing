@@ -19,11 +19,7 @@ Header.Logo = function HeaderLogo() {
   return (
     <div className="page2__logo-wrapper page2__header-el">
       <a href="">
-        <img
-          className=""
-          src="/public/svg/tiny-color-onlight-rgb.svg"
-          alt="logo"
-        />
+        <img className="" src="/svg/tiny-color-onlight-rgb.svg" alt="logo" />
       </a>
     </div>
   );

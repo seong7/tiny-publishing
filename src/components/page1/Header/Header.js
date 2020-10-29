@@ -20,11 +20,7 @@ Header.Logo = function HeaderLogo() {
   return (
     <div className="page1__logo-wrapper page1__header-el">
       <a href="">
-        <img
-          className=""
-          src="./public/svg/tiny-color-ondark-rgb.svg"
-          alt="logo"
-        />
+        <img className="" src="/svg/tiny-color-ondark-rgb.svg" alt="logo" />
       </a>
     </div>
   );
@@ -92,7 +88,7 @@ Header.Contact = function HeaderContact() {
     <div className="page1__header-contact page1__header-el">
       <Button className="page1__header-btn white-border">Contact</Button>
       <Button className="page1__header-btn non-border">
-        <img src="/public/svg/contact-icon-white.svg" alt="contact-btn" />
+        <img src="/svg/contact-icon-white.svg" alt="contact-btn" />
       </Button>
     </div>
   );
