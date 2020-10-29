@@ -5,7 +5,7 @@ module.exports = {
   // define entry file and output
   entry: './src/index.js',
   output: {
-    path: path.resolve('dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
     // for react-router-dom
     publicPath: '/',
@@ -34,11 +34,18 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       filename: 'index.html',
-      template: './index.html',
+      template: 'public/index.html',
     }),
   ],
   devServer: {
     // for react-router-dom
     historyApiFallback: true,
+    // 정적 파일 경로 설정
+    contentBase: path.join(__dirname, 'dist/'),
+    port: 3000,
+    // 번들된 코드가 실제로 어디 있는지 서버에게 알려주는 거임
+    publicPath: '/',
+    // devserver 에서만 핫로딩 가능하게
+    hotOnly: true,
   },
 };

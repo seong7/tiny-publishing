@@ -241,7 +241,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/public/svg/ephox-background.svg');
+  background-image: url('/dist/svg/ephox-background.svg');
   background-position: 50% 0px;
 }
 
@@ -568,7 +568,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/public/image/ibm-watson-cluster.jpg');
+  background-image: url('/dist/image/ibm-watson-cluster.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.05;

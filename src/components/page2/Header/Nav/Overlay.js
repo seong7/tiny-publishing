@@ -104,7 +104,7 @@ Overlay.Product = function OverlayProduct() {
         >
           <img
             className="overlay__elroboto-img"
-            src="/public/image/elroboto.png"
+            src="/image/elroboto.png"
             alt="elroboto"
           />
           <div className="overlay__featured-wrapper">
@@ -196,17 +196,17 @@ Overlay.Plugins = function OverlayPlugins() {
               {
                 title: 'LoopIndex',
                 subtitle: 'Track changes and comments.',
-                imgSrc: '/public/image/loopindex.png',
+                imgSrc: '/image/loopindex.png',
               },
               {
                 title: 'Wiris',
                 subtitle: 'Math and equation editing.',
-                imgSrc: '/public/image/wiris.png',
+                imgSrc: '/image/wiris.png',
               },
               {
                 title: 'Nifty Images',
                 subtitle: 'Dynamic email content.',
-                imgSrc: '/public/image/nifty.png',
+                imgSrc: '/image/nifty.png',
               },
             ]}
           />

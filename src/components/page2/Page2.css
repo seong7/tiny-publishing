@@ -493,7 +493,7 @@
       #252525 calc(100% - 70rem),
       rgba(37, 37, 37, 0) 100%
     ),
-    url(/public/svg/ephox-dark-background.svg);
+    url(/dist/svg/ephox-dark-background.svg);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
@@ -935,7 +935,7 @@
   background: #061437;
   background-position: 0;
   background-size: cover;
-  background-image: url(/public/image/price-aside-bg.png),
+  background-image: url(/dist/image/price-aside-bg.png),
     linear-gradient(0deg, #0f2251 0%, #061437 100%);
   text-align: center;
 }
@@ -1069,7 +1069,7 @@
   background: #061437;
   background-position: 0;
   background-size: cover;
-  background-image: url(/public/image/price-aside-bg.png),
+  background-image: url(/dist/image/price-aside-bg.png),
     linear-gradient(0deg, #0f2251 0%, #061437 100%);
 }
 .getStarted-img-card h6 {
