@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   // define entry file and output
@@ -30,6 +31,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      filename: 'index.html',
+      template: './index.html',
+    }),
+  ],
   devServer: {
     // for react-router-dom
     historyApiFallback: true,
