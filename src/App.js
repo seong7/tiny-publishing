@@ -15,10 +15,10 @@ export default function App() {
           render={() => (
             <div>
               <br />
-              <NavLink to="/1">&#39;/1&#39;</NavLink>
+              <NavLink to="/1">&#39;page 1&#39;</NavLink>
               <br />
               <br />
-              <NavLink to="/2">&#39;/2&#39;</NavLink>
+              <NavLink to="/2">&#39;page 2&#39;</NavLink>
             </div>
           )}
           exact
