@@ -1,0 +1,39 @@
+.app-wrapper {
+  height: 100%;
+  width: 500px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .app-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 30px;
+
+    button {
+      width: 150px;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      background-color: #34a853;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: #ea4335;
+      }
+    }
+  }
+}

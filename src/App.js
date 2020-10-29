@@ -5,6 +5,7 @@ import Page2 from './pages/Page2';
 
 import './common.scss';
 import './reset.scss';
+import './App.scss';
 
 export default function App() {
   return (
@@ -13,12 +14,16 @@ export default function App() {
         <Route
           path="/"
           render={() => (
-            <div>
-              <br />
-              <NavLink to="/1">&#39;page 1&#39;</NavLink>
-              <br />
-              <br />
-              <NavLink to="/2">&#39;page 2&#39;</NavLink>
+            <div className="app-wrapper">
+              <h1>페이지 버튼을 클릭하세요.</h1>
+              <div className="app-button-wrapper">
+                <NavLink to="/1">
+                  <button>Page 1</button>
+                </NavLink>
+                <NavLink to="/2">
+                  <button>Page 2</button>
+                </NavLink>
+              </div>
             </div>
           )}
           exact
